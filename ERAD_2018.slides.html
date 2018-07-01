@@ -15,8 +15,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <!-- General and theme style sheets -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@3.6.0/css/reveal.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@3.6.0/css/theme/simple.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/reveal.css">
+<link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -24,14 +24,14 @@ if( window.location.search.match( /print-pdf/gi ) ) {
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js@3.6.0/css/print/pdf.css';
+        link.href = 'reveal.js/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
 }
 
 </script>
 
 <!--[if lt IE 9]>
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@3.6.0/lib/js/html5shiv.js"></script>
+<script src="reveal.js/lib/js/html5shiv.js"></script>
 <![endif]-->
 
 <!-- Loading the mathjax macro -->
@@ -11770,169 +11770,6 @@ ul.typeahead-list > li > a {
 .ansi-bold { font-weight: bold; }
 
     </style>
-<style type="text/css">
-    .container { width:100% !important; }
-
-body {
-    color: *#333;
-    /*background: #f6f6f6;*/
-    width: 980px;
-    margin: auto;
-}
-
-#notebook_panel { /* main background */
-    color: #f6f6f6;
-    margin: auto;
-}
-
-div #notebook { /* center the content */
-    /*background: #4b4b4b;*/
-    color: #333;    
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: 2ex;
-    text-align: justify;
-}
-
-#notebook li { /* More space between bullets. */
-    margin-top: 0.8em;
-}
-
-div.text_cell {
-    text-align: justify;
-    width: 105ex /* instead of 100%, */
-}
-
-div.text_cell_render{
-    text-align: justify;
-    padding: 0em 1em 0em 1em;
-    font-family: Verdana, Geneva, sans-serif;
-    line-height: 145%; /* added for some line spacing of text. */
-    width: 842px;      /* instead of 'inherit' for shorter lines */
-    font-weight: Light;
-    font-size: 18pt;
-}
-
-div.text_cell_render.border-box-sizing.rendered_html {
-    margin: 0;
-    padding: 1em; 
-    margin-left: 4ex;
-    text-align: justify;
-}
-div.cell.text_cell.border-box-sizing {
-    margin: 0;
-    padding: 0; 
-    text-align: justify;
-}
-.rendered_html h1 { /* Main titles big with more space*/
-    margin-top: 2.2em;
-    line-height: 1.4em;
-    margin-bottom: 0.1em;
-    padding: 0;
-    font-family: "Open Sans", Sans-Serif; 
-    font-weight: Light;
-}
-.rendered_html h2 {
-    margin-top:2.0em;
-    margin-bottom:0.5em;
-    padding: 0;
-    font-family: "Open Sans", Sans-Serif; font-weight: Light;
-}
-.rendered_html h3 {
-    margin: 0;
-    padding: 0;
-    font-family: "Open Sans", Sans-Serif; font-weight: Light;
-}
-
-pre.rendered_html {
-    font-family: "Droid Sans Mono", monospace;
-    font-size: 12pt;
-    line-height: 0.8em;
-}
-
-div.cell { /* set cell width to about 80 chars */
-    margin-top:1em;
-    margin-bottom:1em;
-    margin-left:auto;
-    margin-right:auto;
-    width: 842px;
-    text-align: justify;
-}
-
-.cell.command_mode.selected {
-    border-color: rgba(0,0,0,0.1);
-}
-
-.cell.edit_mode.selected {
-    border-color: rgba(0,0,0,0.15);
-    box-shadow: 0px 0px 5px #f0f0f0;
-    -webkit-box-shadow: 0px 0px 5px #f0f0f0;
-}
-
-div.cell.code_cell {  /* Area containing both code and output */
-background-color: #FFF;
-border-radius: 10px;
-border-style: solid;
-border-width: 1px;
-border-color: gray;
-padding: 1em;
-}
-
-div.cell.selected { /* Current cell */
-    border-radius: 5px;
-    border-color: #1E90FF;  /* Dodger blue*/
-    border-width: 2px;
-}
-
-div.cell.running{ /* Cell the is running */
-     border: 3px dashed #f33;
-}
-
-
-div.input_area { /* box around box with code */
-    border: none;
-    background: #f5f5f5;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    padding-top: 0.5ex;
-    padding-bottom: 0.5ex;
-    padding-left: 0.5em;
-}
-
-div.input { /* box with code */
-    width: 810px;
-}
-
-div.CodeMirror { /* code font */
-    font-family: "Droid Sans Mono", monospace;
-    font-size: 12pt;
-}
-
-div.prompt { /* remove In/Out prompt */
-    display: none;
-}
-
-div.cell.border-box-sizing.code_cell.rendered {
-    font-size: 12pt;
-}
- 
-div.output_subarea {
-    border:none;
-    font-size: 12pt;
-}
-
-/* header colors and fonts */
-h1 { color: #444; }
-h2 { color: #444; }
-h3 { color: #444; font-style: italic; font-weight: normal}
-
-.cm-s-ipython.language-idl {
-    font-family: "Droid Sans Mono", monospace;
-    font-size: 12pt;
-    line-height: 100%;
-}
-
-    </style>
 
 
 <style type="text/css">
@@ -12081,22 +11918,6 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Overview">Overview<a class="anchor-link" href="#Overview">&#182;</a></h2><ul>
-<li><p>A typical approach</p>
-</li>
-<li><p>A new approach</p>
-</li>
-<li><p>Preliminary Results</p>
-</li>
-</ul>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <table>
 <thead><tr>
 <th style="text-align:center"><a href="https://journals.ametsoc.org/doi/abs/10.1175/1520-0426%282003%29020%3C0845%3ATSOSPW%3E2.0.CO%3B2">Bech et.al. (2003)</a></th>
@@ -12126,7 +11947,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Comparison-Highres-DEM-with-interpolated-DEM-in-polar-coordinates">Comparison Highres DEM with interpolated DEM in polar coordinates<a class="anchor-link" href="#Comparison-Highres-DEM-with-interpolated-DEM-in-polar-coordinates">&#182;</a></h3>
+<h3 id="Comparison-of-interpolated-DEM-in-polar-coordinates-with-Hi-resolution-DEM">Comparison of interpolated DEM in polar coordinates with Hi-resolution DEM<a class="anchor-link" href="#Comparison-of-interpolated-DEM-in-polar-coordinates-with-Hi-resolution-DEM">&#182;</a></h3>
 </div>
 </div>
 </div><div class="fragment">
@@ -12176,20 +11997,54 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="New-Approach">New Approach<a class="anchor-link" href="#New-Approach">&#182;</a></h2><ul>
-<li><p>interpolating DEM values to bin centroids ignores variation in terrain height within the sampling volume AND the nonuniform energy distribution in the sampling volume.</p>
-</li>
-<li><p>explicit consideration of terrain hight variations using hi-res DEM only makes sense, if we take beam energy distribution into account.</p>
-</li>
-<li><p>an elegant approach is to <span style="color:red">bring DEM coordinates and radar bin coordinates in one coherent spherical coordinate system </span></p>
-</li>
-<li><p>possible using standard wradlib georeferencing functions</p>
-</li>
+<h2 id="Hi-Resolution-DEM-Approach">Hi-Resolution DEM Approach<a class="anchor-link" href="#Hi-Resolution-DEM-Approach">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Interpolating DEM values to bin centroids ignores variation in terrain height within the sampling volume AND the nonuniform energy distribution in the sampling volume.</li>
 </ul>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Explicit consideration of terrain hight variations using hi-res DEM only makes sense, if we take beam energy distribution into account.</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>An elegant approach is to <span style="color:red">bring DEM coordinates and radar bin coordinates in one coherent spherical coordinate system </span>.</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>possible using standard wradlib georeferencing functions </li>
+</ul>
+
+</div>
+</div>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -12329,15 +12184,43 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Outlook">Outlook<a class="anchor-link" href="#Outlook">&#182;</a></h2><ul>
-<li>Laser Point clouds</li>
-<li>buildings</li>
-<li>etc.</li>
+<h2 id="Outlook">Outlook<a class="anchor-link" href="#Outlook">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>apply to laser point clouds in the near vicinity (incl. towers and scyscrapers) </li>
 </ul>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>disentangle effects of DEM resolution, interpolation and beam pattern</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>will be made available soon under <a href="https://github.com/wradlib/beamblockage">github</a> and integrated into wradlib.</li>
+</ul>
+
+</div>
+</div>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -12350,10 +12233,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Alper Çubuk and Kurtuluş Öztürk from Turkish Met Service</li>
-</ul>
-
+<h2 id="-Alper-&#199;ubuk-and-Kurtulu&#351;-&#214;zt&#252;rk"><center> Alper &#199;ubuk and Kurtulu&#351; &#214;zt&#252;rk</center><a class="anchor-link" href="#-Alper-&#199;ubuk-and-Kurtulu&#351;-&#214;zt&#252;rk">&#182;</a></h2><center><img src="https://www.mgm.gov.tr/App_Themes/ziko16/img/mgm-logo.svg" alt="TSMS" width="200px"/></center>
 </div>
 </div>
 </div></section><section>
@@ -12365,7 +12245,7 @@ a.anchor-link {
 <li>High Resolution DGM1 Data (1mx1m): Land NRW (2018) 
 <a href="www.govdata.de/dl-de/by-2-0">Datenlizenz  Deutschland - Namensnennung - Version 2.0</a></li>
 </ul>
-
+<center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Open_data_large_color_%28vector%29.svg/493px-Open_data_large_color_%28vector%29.svg.png" alt="OpenData" width="200px"/></center>
 </div>
 </div>
 </div></section></section><section><section>
@@ -12439,8 +12319,8 @@ require(
       waitSeconds: 15
     },
     [
-      "https://cdn.jsdelivr.net/npm/reveal.js@3.6.0/lib/js/head.min.js",
-      "https://cdn.jsdelivr.net/npm/reveal.js@3.6.0/js/reveal.js"
+      "reveal.js/lib/js/head.min.js",
+      "reveal.js/js/reveal.js"
     ],
 
     function(head, Reveal){
@@ -12455,9 +12335,9 @@ require(
 
             // Optional libraries used to extend on reveal.js
             dependencies: [
-                { src: "https://cdn.jsdelivr.net/npm/reveal.js@3.6.0/lib/js/classList.js",
+                { src: "reveal.js/lib/js/classList.js",
                   condition: function() { return !document.body.classList; } },
-                { src: "https://cdn.jsdelivr.net/npm/reveal.js@3.6.0/plugin/notes/notes.js",
+                { src: "reveal.js/plugin/notes/notes.js",
                   async: true,
                   condition: function() { return !!document.body.classList; } }
             ]
