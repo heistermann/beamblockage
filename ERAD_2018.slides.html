@@ -12070,8 +12070,7 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Digitize DEM coordinates over azimuth and range </li>
-<li>Calculate azimuth and elevation arrays for every radar range</li>
+<li>Collect all DEM points in the different radar range intervals </li>
 </ul>
 
 </div>
@@ -12082,8 +12081,8 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Create high resolution azimuth arrays of elevation </li>
-<li>Create azimuthal projection of elevation along range</li>
+<li>Resample all DEM elevation values within one range interval onto the same high resolution azimuth grid</li>
+<li>Calculate cumulative maximum of elevation along range</li>
 </ul>
 
 </div>
@@ -12094,7 +12093,7 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Iterate over azimuth's and match Gaussian Beam Kernel with Elevation to calculate blocked energy ratio</li>
+<li>Iterate over antenna pointing angles and match gaussian beam with elevation to calculate blocked energy ratio</li>
 </ul>
 
 </div>
@@ -12193,7 +12192,7 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Apply to laser point clouds in the near vicinity (incl. towers and scyscrapers).</li>
+<li>Apply the method with a radar with a more interseting near field (towers and scyscrapers).</li>
 </ul>
 
 </div>
