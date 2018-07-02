@@ -12006,7 +12006,7 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Interpolating DEM values to bin centroids ignores variation in terrain height within the sampling volume AND the nonuniform energy distribution in the sampling volume.</li>
+<li>The intuitive approach is to take into account the terrain variation within the sampling volume.</li>
 </ul>
 
 </div>
@@ -12017,7 +12017,7 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Explicit consideration of terrain hight variations using hi-res DEM only makes sense, if we take beam energy distribution into account.</li>
+<li>Doing so requires to take also the beam energy distribution into account.</li>
 </ul>
 
 </div>
@@ -12028,7 +12028,7 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>An elegant approach is to <span style="color:red">bring DEM coordinates and radar bin coordinates in one coherent spherical coordinate system </span>.</li>
+<li>To match the terrain with the radar beam <span style="color:red">we translate the DEM coordinates into the radar's spherical coordinate system</span>.</li>
 </ul>
 
 </div>
@@ -12039,7 +12039,7 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Possible using standard wradlib georeferencing functions. </li>
+<li>Already possible using standard <a href="https://wradlib.org">wradlib</a> georeferencing functions. </li>
 </ul>
 
 </div>
