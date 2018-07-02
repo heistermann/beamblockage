@@ -1,6 +1,8 @@
 # beamblockage
 Beamblockage Calculation using Hi-Resolution DEM
 
+* Current slides at [wradlib.org](https://wradlib.org/beamblockage/ERAD_2018.slides.html)
+
 * Create HTML-Slides
 
 ```bash
